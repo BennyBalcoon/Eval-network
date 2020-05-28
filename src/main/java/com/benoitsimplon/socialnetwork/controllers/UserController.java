@@ -2,6 +2,7 @@ package com.benoitsimplon.socialnetwork.controllers;
 
 import com.benoitsimplon.socialnetwork.dtos.UserCreateDto;
 import com.benoitsimplon.socialnetwork.dtos.UserDto;
+import com.benoitsimplon.socialnetwork.entities.User;
 import com.benoitsimplon.socialnetwork.services.UserService;
 import org.springframework.web.bind.annotation.*;
 
@@ -33,4 +34,6 @@ public class UserController {
     public void create(@RequestBody @Valid UserCreateDto dto) {
         service.create(dto);
     }
+
+
 }
